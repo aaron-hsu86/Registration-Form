@@ -10,41 +10,43 @@
         <form action="/process" method="post">
             <!-- Asking for personal information -->
             <div>
-                <label>First Name: *</label>
-                <input required type="text" name="firstname" placeholder="Your name...">
+                <!-- added 'for' and 'id' values to checks -->
+                <label for="firstname">First Name: *</label>
+                <input required type="text" id="firstname" name="firstname" placeholder="Your name...">
             </div>
             <div>
-                <label>Last Name: *</label>
-                <input required type="text" name="lastname" placeholder="Last name...">
+                <label for="lastname">Last Name: *</label>
+                <input required type="text" id="lastname" name="lastname" placeholder="Last name...">
             </div>
             <div>
-                <label>Email Address: *</label>
-                <input required type="text" name="email" placeholder="example@email.com">
+                <label for="email">Email Address: *</label>
+                <input required type="text" id="email" name="email" placeholder="example@email.com">
             </div>
             <div>
-                <label>Password: *</label>
-                <input required type="password" name="password" placeholder="Password...">
+                <label for="password">Password: *</label>
+                <input required type="password" id="password" name="password" placeholder="Password...">
             </div>
             <div>
-                <label>Confirm Password: *</label>
-                <input required type="password" name="password" placeholder="Confirm Password...">
+                <label for="password">Confirm Password: *</label>
+                <input required type="password" id="password" name="password" placeholder="Confirm Password...">
             </div>
             <div>
-                <label>Birthday: </label>
-                <input type="date" name="birthday" placeholder="mm/dd/yyyy">
+                <label for="birthday">Birthday: </label>
+                <input type="date" id="birthday" name="birthday" placeholder="mm/dd/yyyy">
             </div>
             <!-- Asking about gender -->
             <div>
                 <label>Gender Identity:</label>
             </div>
             <div>
-                <input type="radio" name="font" value="male" id="male">
+                <!-- edited name values -->
+                <input type="radio" name="male" value="male" id="male">
                 <label for="male">Male</label>
-                <input type="radio" name="font" value="female" id="female">
+                <input type="radio" name="female" value="female" id="female">
                 <label for="female">Female</label>
-                <input type="radio" name="font" value="non-binary" id="non-binary">
+                <input type="radio" name="non-binary" value="non-binary" id="non-binary">
                 <label for="non-binary">Non-binary</label>
-                <input type="radio" name="font" value="no-answer" id="no-answer">
+                <input type="radio" name="no-answer" value="no-answer" id="no-answer">
                 <label for="no-answer">I prefer not to answer</label>
             </div>
             <!-- Short text box for self description -->
